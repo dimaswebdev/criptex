@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Criptex</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://kit.fontawesome.com/19bb091880.js" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/script.js"></script>
+    
+
+</head>
+<body>
+    
+    
+        <header>
+            <nav></nav>
+        </header>
+
+        <div class="container">
+            <aside class="sidebar">
+                <div class="linha-vertical"></div> 
+                <div class="titulo"> 
+                    <h1>Bem vindos ao Criptex!</h1>
+                </div>
+                <div class="subtitulo">
+                    <h2>"Este é um decodificador de mensagens. Digite as mensagens em texto minúsculo, sem acentos gráficos ou símbolos. Para uma melhor experiência, pressione F11 no teclado.</h2>
+                </div>
+                <div class="mascote">
+                    <img src="./assets/images/bonitao-03.png" alt="Mascote do Decodificador"> 
+                </div>
+                <a href="https://www.alura.com.br/planos-cursos-online" class="botao-concentrico" id="btn-02" target="_blank">
+                    <span class="circulo-externo"></span>
+                    <span class="circulo-interno">
+                        <img src="./assets/images/logo-alura-azul.png" alt="Logo Alura Azul" class="logo-alura-azul">
+                        <img src="./assets/images/logo-alura-branca.png" alt="Logo Alura Branca" class="logo-alura-branca">
+                    </span>
+                </a>
+            </aside>
+
+            <main class="content">
+                <div class="container-botoes">
+                    <div class="logo-criptex" id="logo-criptex">
+                        <img src="./assets/images/criptex-logo.png" alt="Logo Criptex">
+                    </div>
+                    <div class="botao-central-01" id="botao-central-01">
+                        <a href="#" class="botao-concentrico" id="btn-01">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-externo-02"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao"></div>
+                            <div class="textarea-container">
+                                <textarea placeholder="Digite seu texto aqui..."></textarea>
+                                <div id="contador-caracteres">0 / 1000</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="botoes-centrais">
+                        <a href="#" class="botao-concentrico" id="btn-03">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao">Criptografar</div>
+                        </a>
+                        <a href="#" class="botao-concentrico" id="btn-04">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao">Descriptografar</div>
+                        </a>
+                        <a href="#" class="botao-concentrico" id="btn-05">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao">Copiar</div>
+                        </a>
+                        <a href="#" class="botao-concentrico" id="btn-06">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao">Colar</div>
+                        </a>
+                        <a href="#" class="botao-concentrico" id="btn-07">
+                            <div class="circulo-externo"></div>
+                            <div class="circulo-interno"></div>
+                            <div class="texto-botao">Limpar</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div id="menu-flutuante" class="botoes-animados">
+                    <div class="tooltip">
+                        <a href="./index2.html" class="image img1 "><i class="fa-solid fa-gear"></i></a>
+                        <span class="tooltiptext ">sobre</span>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://github.com/dimaswebdev" target="_blank" class="image img2"><i class="fab fa-github"></i></a>
+                        <span class="tooltiptext">GitHub</span>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://discord.gg/9msQpJXZ5G" target="_blank" class="image img3"><i class="fab fa-discord"></i></a>
+                        <span class="tooltiptext">Discord</span>
+                    </div>
+                    <div class="tooltip">
+                        <a href="https://www.linkedin.com/in/dimas-dimasdesigner/" target="_blank" class="image img4"><i class="fab fa-linkedin-in"></i></a>
+                        <span class="tooltiptext">LinkedIn</span>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <div class="gooey-container">
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+            <div class="button"></div>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="0" height="0">
+            <defs>
+                <filter id="gooey-effect">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 30 -15" result="gooey" />
+                    <feComposite in="SourceGraphic" in2="gooey" operator="atop"/>
+                </filter>
+            </defs>
+        </svg>
+
+        <footer>
+            <div class="rodpe">
+                <img src="./assets/images/dimas-designer-logo.png" alt="Logo DimasDesigner" class="logo-footer">
+                <p>&COPY; Desenvolvido por Dimas Designer / AluraOne - 2024</p>
+                
+            </div>   
+        </footer>
+
+    
+    
+</body>
+</html>
