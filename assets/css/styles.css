@@ -204,6 +204,7 @@ body::before {
   cursor: pointer;
   transition: transform 0.5s ease, top 0.5s ease, left 0.5s ease;
   animation: enterFromInfinity 0.5s ease-out forwards;
+  animation: enterFromInfinityComMola 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .logo-criptex img {
@@ -1068,5 +1069,20 @@ footer {
   100% {
     transform: translate(-50%, -50%) scale(1);
     box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+
+@keyframes enterFromInfinityComMola {
+  from {
+      transform: translate(-50%, -50%) scale(0);
+      opacity: 0;
+  }
+  90% { /* Um pouco antes do final */
+      transform: translate(-50%, -50%) scale(1.1); /* Ultrapassa um pouco o tamanho final */
+  }
+  to {
+      transform: translate(-50%, -50%) scale(1); 
+      opacity: 1;
   }
 }
